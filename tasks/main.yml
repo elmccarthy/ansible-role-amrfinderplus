@@ -1,0 +1,9 @@
+---
+
+- name: install AMRFinderPlus via conda
+  conda_install:
+    name: "ncbi-amrfinderplus"
+    version: "{{ version }}"
+    executable: "{{ conda_executable }}"
+    channel: "bioconda"
+    environment: "armfinderplus_{{ env_name }}"
